@@ -1,8 +1,7 @@
 {
   "name": "polymer-tools",
   "private": true,
-  "version": "3.0.0-pre.19",
-  "description": "Static analysis for Web Components",
+  "description": "Polymer tooling monorepo!",
   "homepage": "https://github.com/Polymer/tools",
   "bugs": "https://github.com/Polymer/tools/issues",
   "license": "BSD-3-Clause",
@@ -10,7 +9,11 @@
     "type": "git",
     "url": "https://github.com/Polymer/tools.git"
   },
-  "scripts": {},
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "test": "lerna run test",
+    "test:integration": "lerna run test:integration"
+  },
   "devDependencies": {
     "lerna": "^2.9.1"
   },

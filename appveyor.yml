@@ -4,14 +4,14 @@ install:
   # https://www.appveyor.com/docs/lang/nodejs-iojs/#selecting-nodejs-or-iojs-version
   - ps: Install-Product node ''
   - npm install
-  - npx lerna bootstrap
+  - npm run bootstrap
 
 test_script:
   - node --version
   - npm --version
   - npx lerna --version
-  - npx lerna run test
-  - npx lerna run test:integration
+  - npm run test
+  - npm run test:integration
 
 
 # Don't actually build.
