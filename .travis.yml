@@ -3,5 +3,9 @@ node_js:
   - "6"
   - "8"
   - "node"
+install:
+- npm install
+- npx lerna bootstrap
 script:
-- lerna bootstrap && lerna run test
+- npx lerna run test
+- npx lerna run test:integration
